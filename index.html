@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dluxoria</title>
+</head>
+<body>
+    <div id="preloader"></div>       
+    <div class="container">
+        <nav class="navbar fixed-top mobile-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                      <a class="nav-link" href="about.html">ABOUT</a>
+                      <a class="nav-link" href="services.html">SERVICES</a>
+                      <a class="nav-link" href="projects.html">PROJECTS</a>
+                      <a class="nav-link" href="contact.html">CONTACT US</a>
+                  </div>
+              </div>
+            </div>
+        </nav>
+
+        <button class="scroll-top scroll-to-target" data-target="html" >
+            <span class="fa fa-arrow-up"></span>
+            </button>
+        <div class="header">
+            <div class="left-header">
+                <img src="images/dluxoria_logo1.png" alt="logo">
+            </div>
+            <div class="right-header">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                            <a class="nav-link" href="projects.html">PROJECTS</a>
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+        <div class="banner-container">
+            <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/banner.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class="about-container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12 col-lg-5">
+                    <div class="about-inner reveal fade-left">
+                        <div class="about-left">
+                            <div class="about-img animated"></div> 
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-sm-12 col-lg-7">
+                    <div class="about-content  reveal fade-right">
+                    <h1 class="text-uppercase service-p">About Our Company</h1>
+                    <p>At Dluxoria, we redefine the concept of premium luxury home design, offering a holistic and seamless service that caters to your every need. From the initial spark of inspiration to the final touches of perfection, we orchestrate every facet of your project with utmost precision and care. Our process encompasses a spectrum of services, ensuring a delightful and satisfied client at the journey's end.</p>
+                    <a class="text-uppercase" href="about.html">Discover More about our story</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="project-container mb-5">
+            <div class="project-heading">
+                <h4 class="head-common">
+                    <!-- <div class="horizontal-line"></div>
+                    <span>Interior Design Firm</span></h4> -->
+                    <div class="project-img"></div>
+                    <div class="interior-text">
+                        <h4 class="head-common text-white">Interior Design Firm</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-sm-12 col-lg-12">
+                                    <div class="project-heading-inner text-justify">
+                                        <p>Dluxoria, a distinguished luxury home design firm, has been synonymous with creating timeless and sophisticated interior spaces for generations. Located in the vibrant cultural epicenter of Mumbai, we have had the privilege of collaborating with a diverse clientele not only across India but around the globe. Our extensive portfolio spans various industry sectors, encompassing residential, retail, commercial, development, and turnkey contracting projects. Each undertaking is a testament to our unwavering dedication to refined and conscientious design, our considerable technical prowess, and our steadfast commitment to not just meeting but surpassing our clients' expectations.</p>
+                                            
+                                        <p>At Dluxoria, we recognize that the heart of our firm lies in the extraordinary individuals we work with. Consequently, we assemble the most talented luxury interior designers in Mumbai, uniting the industry's most brilliant minds under our banner. Each designer brings a wealth of unique experiences, design sensibilities, and boundless creative flair, all of which we deeply cherish. We nurture these individual talents and weave them together to craft an exclusive brand of interior design and a level of customer service that is unparalleled.</p>
+                                            
+                                        <p>Much like our diverse and dynamic team, our interior design philosophy revolves around the art of harmoniously combining disparate elements to yield a truly exceptional end product. Whether it's the meticulously crafted custom furniture, hand-picked lighting fixtures, the carefully curated color palettes, or the exquisite decor pieces we acquire, we infuse love into every detail. Whether we're undertaking a sleek urban apartment design or embarking on a lavish villa remodel, we invest immense care and attention to bring each facet to life, ultimately creating spaces that radiate synergy and sophistication.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div class="projects mt-5">
+                <h4 class="head-common">
+                    <div class="horizontal-line"></div>
+                    <span>Our Projects</span>
+                </h4>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-6">
+                        <div class="inner">
+                            <h5 class="head-common">Residential</h5>
+                            <a href="projects.html"><div class="project-inner-imgs1"></div></a>
+                            <div class="inner-content">
+                                <a href="projects.html" class="project-name">Residential</a>
+                                <p class="project-p">
+                                    Located in the land ice and fire, our ongoing hospitality interior design project is a large-scale development in Reykjavik, Iceland. The brief for the 450 room hotel development was to pay homage to the Icelandic landscape, through cool colour schemes and warm materials. Cosy furniture and inviting bars work together to create a comforting atmosphere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-6">
+                        <div class="inner">
+                            <h5 class="head-common">Commercial</h5>
+                            <a href="projects.html"><div class="project-inner-imgs2"></div></a>
+                            <div class="inner-content">
+                                <a href="projects.html" class="project-name">Corporate Office</a>
+                                <p class="project-p">
+                                    Located in the land ice and fire, our ongoing hospitality interior design project is a large-scale development in Reykjavik, Iceland. The brief for the 450 room hotel development was to pay homage to the Icelandic landscape, through cool colour schemes and warm materials. Cosy furniture and inviting bars work together to create a comforting atmosphere.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="services-container mb-5">
+            <h4 class="head-common text-center">
+                <div class="horizontal-line"></div>
+                <span>Services</span>
+            </h4>
+            <div class="res-services mt-4">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-6 position-relative">
+                        <img src="images/res-service.jpg" alt="residential_service_image" class="position-relative res-service-img">
+                        <div class="res-service-content position-absolute">
+                            <div class="service-content">
+                                <h4 class="services-heading">Residential</h4>
+                                <p class="m-0">
+                                    Our residential services at Dluxoria are tailored to transform your house into a welcoming and stylish home. From initial concept to final décor, we take care of every detail, ensuring your space embodies your unique personality and needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="res-service-content-mob">
+                            <div class="service-content-mob">
+                                <h4 class="services-heading">Residential</h4>
+                                <p class="m-0">
+                                    Our residential services at Dluxoria are tailored to transform your house into a welcoming and stylish home. From initial concept to final décor, we take care of every detail, ensuring your space embodies your unique personality and needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="com-services">
+                <div class="row flex-row-reverse">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-6 mt-5 position-relative">
+                        <img src="images/com-service.jpg" alt="Commercial_service_image" class="position-relative com-service-img">
+                        <div class="com-service-content position-absolute">
+                            <div class="service-content">
+                                <h4 class="services-heading">Commercial</h4>
+                                <p class="m-0">In the realm of commercial design, we bring innovation and functionality to your workspace. Our comprehensive services encompass everything from space planning to lighting design, creating an environment that not only reflects your brand but also enhances productivity and engagement.</p>
+                            </div>
+                        </div>
+                        <div class="com-service-content-mob">
+                            <div class="service-content-mob">
+                                <h4 class="services-heading">Commercial</h4>
+                                <p class="m-0">In the realm of commercial design, we bring innovation and functionality to your workspace. Our comprehensive services encompass everything from space planning to lighting design, creating an environment that not only reflects your brand but also enhances productivity and engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12 col-lg-12">
+                    <h4 class="text-center text-white">Get In Touch</h4>
+                    <form id="contact-form">
+                        <div class="contact1 mb-4">
+                                <input type="text" id="fname" placeholder="First Name" required oninvalid="this.setCustomValidity('Please enter your first name')" oninput="this.setCustomValidity('')">
+                                <input type="text" id="lname" placeholder="Last Name" required oninvalid="this.setCustomValidity('Please enter your last name')" oninput="this.setCustomValidity('')">
+                        </div>
+                        <div class="contact1 mb-4">
+                            <input type="email" id="email" placeholder="Email" required oninvalid="this.setCustomValidity('Please enter your email')" oninput="this.setCustomValidity('')">
+                            <input type="tel" id="phone" placeholder="Phone" required oninvalid="this.setCustomValidity('Please enter your phone')" oninput="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}">
+                        </div>
+                        <textarea id="message" placeholder="Type your message here" required oninvalid="this.setCustomValidity('Please enter your message')" oninput="this.setCustomValidity('')"></textarea>
+                        <button class="btn submit-btn mt-3" type="submit" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 left-header  col-sm-12">
+                    <img src="images/dluxoria_logo1.png" alt="logo" class="mb-4">
+                    <p class="footer-p">At Dluxoria, we don't just design spaces; we craft experiences. With a passion for innovation and an unwavering commitment to excellence, we transform homes and commercial environments into living works of art.</p>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-sm-12">
+                    <div class="links">
+                        <div class="header-link">
+                                <div><a href="index.html" class="head-common">Home</a></div>
+                                <div><a href="about.html" class="head-common">About</a></div>
+                                <div><a href="projects.html" class="head-common">Projects</a></div>
+                                <div><a href="services.html" class="head-common">Services</a></div>
+                        </div>
+                        <div class="contact-link">
+                            <div class="contact-footer">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="phone-footer">+91 8468800636</div>
+                            </div>
+                            <div class="contact-footer">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="email-footer">example@gmail.com</div>
+                            </div>
+                            <div class="contact-footer ">
+                                <i class="fa-solid fa-address-book"></i>
+                                <div class="address-footer">Office no 208, Rajgruhi business hub,market yard Iscon road, near Gokul hotel Kondhwa Budruk 411048</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

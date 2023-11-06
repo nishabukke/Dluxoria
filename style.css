@@ -11,6 +11,20 @@
     background-color: #dee1e2;
   }
 
+  html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{        
+    width: 1rem;
+    }
+html::-webkit-scrollbar-track{
+        background: transparent;
+    }
+html::-webkit-scrollbar-thumb{
+        background: #cda24d;
+    }
+
 .mobile-nav{
     display: none;
 }
@@ -121,7 +135,7 @@ a{
 }
 
 
-.left-header img{
+.left-header img, .footer-img img{
     width: 150px;
 }
 
@@ -157,7 +171,6 @@ a{
 }
 
 .about-container{
-    margin-top: 70px;
     position: relative;
     background-image: url('images/about-content-home-bg.png');
     background-repeat: no-repeat;
@@ -223,15 +236,14 @@ a{
 
 .project-heading-inner{
     background: #cda24d;
-    padding: 40px;
+    padding: 10px;
     margin-top: 35px;
     height: auto;
 }
 
 .project-heading-inner p{
-    /* display: block; */
     color: #191919;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: capitalize;
     font-size: 12px;
     line-height: 1.5;
@@ -381,11 +393,7 @@ a.project-name {
   }
 
   .links{
-    display: flex;
-    gap: 90px;
-    margin-top: 50px;
-    align-items: center;
-    margin-left: 80px;
+    text-align: center;
   }
 
   .contact-footer{
@@ -416,14 +424,33 @@ a.project-name {
   }
 
   .footer-p{
-    width: 70%;
-    line-height: 33px;
+    font-size: 14px;
   }
 
+  .phone-footer, .address-footer, .email-footer{
+    font-size: 14px;
+  }
 
 
   /*********** ABOUT US PAGE..  ***********/
 
+  .director-img{
+    filter: grayscale(100%);
+    display: flex;
+    width: max-content;
+    margin: 0px auto;
+  }
+
+  .director-img:hover{
+    filter: grayscale(0%);
+    transition: all .2s ease-in;
+  }
+
+  .about-content-title h5{
+    font-style: italic;
+  }
+
+/* 
   .about-us-page-banner{
     background-image: url(images/about-us-banner.jpg);
     opacity: 0.9;
@@ -434,7 +461,7 @@ a.project-name {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #999;
-  }
+  } */
 
   .about-us-inner{
     overflow: hidden;
@@ -498,7 +525,9 @@ a.project-name {
 .feature-inner{
     display: flex;
     gap: 20px;
+    align-items: flex-start;
 }
+
 
   /* @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css); */
 
@@ -1116,7 +1145,7 @@ a.project-name {
   }
 
   .res-services-img{
-    background-image: url(images/res-img3.JPG);
+    background-image: url(images/res-img3.jpg);
   }
 
   .com-services-img{
@@ -1155,9 +1184,9 @@ a.project-name {
 
 
   /************ PROJECT PAGE CSS  ********/
-
+/* 
   .projects-page-banner{
-    background-image: url(images/res-img3.JPG);
+    background-image: url(images/res-img3.jpg);
     opacity: 0.9;
     position: relative;
     width: 100%;
@@ -1166,7 +1195,7 @@ a.project-name {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #999;
-  }
+  } */
 
 
 .project-block-one {
@@ -1219,7 +1248,7 @@ a.project-name {
 .project-block-one .inner-box .caption-box h4 {
     position: absolute;
     left: -100%;
-    bottom: 105px;
+    bottom: 90px;
     display: block;
     font-size: 20px;
     line-height: 30px;
@@ -1230,7 +1259,7 @@ a.project-name {
 }
 
 .project-block-one:hover .caption-box h4 {
-    left: -50px;
+    left: -10px;
 }
 
 
@@ -1286,7 +1315,7 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
 /********** CONTACT US PAGE CSS  *******/
 
-.contact-us-page-banner{
+/* .contact-us-page-banner{
     background-image: url(images/contact-us-banner.avif);
     opacity: 0.9;
     position: relative;
@@ -1296,7 +1325,7 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #999;
-  }
+  } */
 
 #contact-us-form {
     margin: 0 auto;
@@ -1509,18 +1538,6 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
         padding-left: 160px;
     }
 
-    .footer-container .row{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-p {
-        width: 100%;
-        font-size: 20px;
-        line-height: 25px;
-        text-align: center;
-    }
-
     .res-services-img, .com-services-img{
         height: 500px;
     }
@@ -1541,8 +1558,24 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
   @media screen and (max-width: 450px) {
 
+    .container{
+        padding: 0px 30px;
+    }
+
     p{
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .links{
+        margin-bottom: 15px;
+    }
+
+    .feature-content p{
+        font-size: 12px;
+    }
+
+    .phone-footer, .address-footer, .email-footer {
+        font-size: 12px;
     }
 
     .right-header{
@@ -1558,7 +1591,8 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     }
 
     .about-heading{
-        letter-spacing: 1px;
+        letter-spacing: 0px;
+        font-size: 30px;
     }
 
     .feature-inner {
@@ -1663,11 +1697,9 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
         left: auto;
     }
 
-    .left-header img{
-        display: flex;
-        width: 60%;
-        margin: 0px auto;
-    }
+    /* .footer-img img{
+        width: 50%;
+    } */
 
     .service-content {
         font-size: 13px;
@@ -1684,18 +1716,15 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     }
 
     .footer-p {
-        width: 100%;
         font-size: 12px;
-        line-height: 20px;
-        text-align: center;
     }
     
-    .links {
+    /* .links {
         display: flex;
         gap: 20px;
         flex-direction: column;
         margin: 0;
-    }    
+    }     */
 
     .contact-link {
         gap: 10px;

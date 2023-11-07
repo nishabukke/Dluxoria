@@ -203,7 +203,6 @@ function plusSlides(n, slideId) {
 
 // Thumbnail image controls
 function currentSlider(n,slideId) {
-  e.stopPropagation();
   showSlides(slideIndex = n, slideId);
 }
 

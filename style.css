@@ -92,7 +92,7 @@ body{
     position: relative;
 }
 
-.head-common span{
+.category-heading{
     padding: 0 20px;
     background: #fff;
     position: relative;
@@ -230,6 +230,18 @@ a{
     background-position: center;
 }
 
+#more{
+    display: none;
+}
+
+.read-btn{
+    font-size: 14px;
+    border: none;
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+}
+
 .interior-text{
     margin-top: -130px;
 }
@@ -237,7 +249,6 @@ a{
 .project-heading-inner{
     background: #cda24d;
     padding: 10px;
-    margin-top: 35px;
     height: auto;
 }
 
@@ -301,13 +312,7 @@ a.project-name {
     text-align: justify;
     font-size: 12px;
     color: #222222;
-}
-
-
-
-.col-2 i{
-    color: #cda24d;
-    font-size: 35px;
+    margin: 0;
 }
 
 .res-service-img, .com-service-img{
@@ -439,6 +444,7 @@ a.project-name {
     display: flex;
     width: max-content;
     margin: 0px auto;
+    
   }
 
   .director-img:hover{
@@ -670,7 +676,7 @@ a.project-name {
   }
   
   .testim .cont div p {
-      font-size: 1.15em;
+      font-size: 14px;
       color: #000;
       width: 80%;
       margin: auto;
@@ -1231,9 +1237,7 @@ a.project-name {
 }
 
 .image-box img {
-    height: 400px;
     max-width: 100%;
-    width: 356px;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -1308,7 +1312,7 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 }
 
 .project-desc p{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -1498,9 +1502,8 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
  @media screen and (max-width: 768px){
 
-    iframe{
-        width: 320px;
-        height: 250px;
+    p{
+        font-size: 14px;
     }
 
     .res-service-content-mob, .com-service-content-mob{
@@ -1515,10 +1518,47 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
         display: block;
         right: 30px;
         left: auto;
+        position: absolute;
+    }
+
+    .navbar-toggler{
+        border: none;
+        background-color: none;
     }
 
     .about-inner{
         width: 100%;
+    }
+    
+    .about-content{
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .service-p{
+        font-size: 35px;
+        line-height: normal;
+    }
+
+    .director-img{
+        width: 100%;
+    }
+
+    
+    .about-heading{
+        letter-spacing: 0px;
+        font-size: 30px;
+    }
+
+    .feature-content p{
+        font-size: 12px;
+    }
+    .testim .cont div p{
+        font-size: 14px;
+    }
+
+    .about-us-page-content p{
+        font-size: 14px;
     }
 
     .about-img:hover{
@@ -1559,7 +1599,7 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
   @media screen and (max-width: 450px) {
 
     .container{
-        padding: 0px 30px;
+        padding: 0px 10px;
     }
 
     p{
@@ -1568,6 +1608,11 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
     .links{
         margin-bottom: 15px;
+    }
+
+    .project-inner-imgs1, .project-inner-imgs2{
+        height: 350px;
+        background-size: 100% 100%;
     }
 
     .feature-content p{
@@ -1592,7 +1637,20 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
     .about-heading{
         letter-spacing: 0px;
-        font-size: 30px;
+        font-size: 26px;
+    }
+
+    .about-content{
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .director-img{
+        width: 100%;
+    }
+
+    hr{
+        margin: 0;
     }
 
     .feature-inner {
@@ -1609,12 +1667,18 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     }
 
     .service-p{
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: normal;
     }
 
-    .project-heading-inner{
-        margin-top: 20px;
+    .project-img {
+        height: 350px;
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .project-heading-inner p{
+        font-size: 11px;
     }
 
     /* .project-heading, .projects {
@@ -1623,6 +1687,10 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
 
     .inner{
         margin-top: 20px;
+    }
+
+    .project-desc h6{
+        font-size: 14px;
     }
     
     .res-service-content.position-absolute, .com-service-content.position-absolute {
@@ -1639,18 +1707,13 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     padding: 0;
     }
 
-    .navbar-toggler-icon{
-        width: 1rem;
-        height: 1rem;
+    .navbar-toggler{
+        border: none;
+        background-color: none;
     }
 
     div#offcanvasNavbar {
         width: 80%;
-    }
-
-    iframe{
-        width: 300px;
-        height: 300px;
     }
 
     .ytp-chrome-top.ytp-show-cards-title {
@@ -1661,17 +1724,8 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
         font-size: 12px;
     }
 
-    .about-us-page-banner{
-        height: 200px;
-        margin-bottom: 0px !important;
-    }
-
-    .projects-page-banner, .contact-us-page-banner{
-        height: 200px;
-    }
-
     .head-common{
-        font-size: 14px;
+        font-size: 18px;
         margin: 0;
     }
 
@@ -1774,10 +1828,10 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     }
 
     .service-desc {
-        font-size: 13px;
+        font-size: 12px;
         padding: 10px 0px;
-        line-height: 25px;
-        letter-spacing: 1px;
+        line-height: normal; 
+        letter-spacing: 0px;
         text-align: justify;
     }
 
@@ -1799,6 +1853,6 @@ i.fa-solid.fa-up-right-and-down-left-from-center:hover{
     }
 
     .res-services-img, .com-services-img{
-        height: 500px;
+        height: 350px;
     }
   } 

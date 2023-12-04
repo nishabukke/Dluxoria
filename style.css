@@ -329,11 +329,11 @@ a.project-name {
     z-index: 1;
 }
 
-.com-service-content{
+.com-service-content {
     background: #444;
-    height: 300px;
+    height: 210px;
     width: 100%;
-    top: 12%;
+    top: 30%;
     right: 90%;
     z-index: 1;
 }
@@ -405,6 +405,22 @@ a.project-name {
     display: flex;
     gap: 20px;
     align-items: center;
+    color: #000;
+  }
+
+  .social{
+    margin-top: 20px;
+  }
+
+  .social i{
+    cursor: pointer;
+  }
+
+  .social i, .contact-footer i{
+    color: #fff;
+    background-color: #000;
+    padding: 8px;
+    border-radius: 50%;
   }
 
   ul, li{
@@ -416,6 +432,11 @@ a.project-name {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  .email-footer a{
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .header-link div a{
